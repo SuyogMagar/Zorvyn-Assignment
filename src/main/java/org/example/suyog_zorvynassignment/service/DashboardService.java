@@ -47,7 +47,7 @@ public class DashboardService {
         }
         return monthlyMap;
     }
-    
+
     public Map<Integer, BigDecimal> getMonthlyIncome(int year) {
         List<Object[]> results = recordRepository.calculateMonthlyIncome(year);
         Map<Integer, BigDecimal> monthlyMap = new HashMap<>();

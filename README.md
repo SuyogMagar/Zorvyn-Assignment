@@ -71,7 +71,24 @@ Run these commands in your terminal:
 ```
 The application will start, connect to the database, and automatically create the required tables. It will also insert three default users for you to test with!
 
-### 3. Explore the API!
+### 3. Running the Application via Docker (Optional)
+If you prefer to run the entire backend via Docker instead of Maven, we've provided an optimized, multi-stage `Dockerfile` (perfect for deployments like Render). Ensure your `financetracker-postgres` database container is already running (from step 1).
+
+First, build the Docker image:
+```bash
+docker build -t suyog-app .
+```
+
+Then, run the container:
+```bash
+# For Linux (using host network to reach the local database):
+docker run -e PORT=8080 --network host suyog-app
+
+# For Mac/Windows (using Docker's internal host resolution):
+docker run -p 8080:8080 -e PORT=8080 -e SPRING_DATASOURCE_URL="jdbc:postgresql://host.docker.internal:7432/financetracker" suyog-app
+```
+
+### 4. Explore the API!
 You can interact with the app using the beautifully generated Swagger UI directly in your browser.
 
 Open your browser and navigate to:

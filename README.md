@@ -45,6 +45,17 @@ This project was built with production-readiness in mind, demonstrating strong b
 
 ---
 
+## ☁️ Live Cloud Deployment
+This project has been successfully containerized and deployed live for immediate evaluation!
+The Spring Boot backend is hosted as a Docker Web Service on **Render**, seamlessly paired with a managed **PostgreSQL** database instance also running on Render.
+
+You can instantly test the live application in the cloud (using the provided Postman Collection or a browser where applicable) via these primary endpoints:
+- **Records API:** [https://zorvyn-assignment-6djo.onrender.com/api/records](https://zorvyn-assignment-6djo.onrender.com/api/records)
+- **Users API:** [https://zorvyn-assignment-6djo.onrender.com/api/users](https://zorvyn-assignment-6djo.onrender.com/api/users)
+- **Summary API (Income):** [https://zorvyn-assignment-6djo.onrender.com/api/summary/total-income](https://zorvyn-assignment-6djo.onrender.com/api/summary/total-income)
+
+---
+
 ## How to Run the Project 🏃‍♂️
 
 Follow these simple steps to get the application up and running on your local machine!
